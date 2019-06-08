@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-import {HomeScreen} from './InsideAppScreens'
 
-class InsideApp extends Component {
+
+class HomeScreen extends Component {
 
   render() {
     return (
-    // <View
+    <View
     
-    // style={styles.InsideAppStyle}>
-    //   <Text>We Are InSideAPP</Text>
-    // </View>
-    <HomeScreen/>
+    style={styles.HomeScreenStyle}>
+      <Text>We Are On the Home Screen</Text>
+    </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-    InsideAppStyle:{
+    HomeScreenStyle:{
       flex:1,
       justifyContent: 'center',
       alignItems: 'center'
@@ -29,4 +28,4 @@ const styles = StyleSheet.create({
   });
 
 
-  export default InsideApp;
+  export {HomeScreen};
